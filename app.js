@@ -9,6 +9,7 @@ var mongoPort = process.env.MONGO_PORT || '27017';
 var mongoUser = process.env.MONGO_USER;
 var mongoPass = process.env.MONGO_PASS;
 var mongoDB = process.env.MONGO_DB;
+var parseURL = process.env.PARSE_URL;
 
 var mongoConnString = 'mongodb://' + mongoUser + ':' + mongoPass + '@' + mongoHost + ':' + mongoPort + '/' + mongoDB;
 
@@ -16,7 +17,7 @@ var dashboard = new ParseDashboard({
     "allowInsecureHTTP": true,
 	"apps": [
 		{
-			"serverURL": "http://localhost:8080/parse",
+			"serverURL": parseURL,
 			"appId": "myAppId",
 			"masterKey": "myMasterKey",
 			"appName": "ZBoxTest"
