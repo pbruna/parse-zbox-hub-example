@@ -1,4 +1,5 @@
 // Comment
+// Otro comentario para probar el Webhook
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var ParseDashboard = require('parse-dashboard');
@@ -45,6 +46,10 @@ app.use('/parse', api);
 
 // make the Parse Dashboard available at /dashboard
 app.use('/dashboard', dashboard);
+
+app.use('/hola', function(req, res){
+	res.send("Hola Mundo con Push");
+})
 
 var httpServer = require('http').createServer(app);
 httpServer.listen(8080);
