@@ -21,7 +21,12 @@ var dashboard = new ParseDashboard({
 			"masterKey": "myMasterKey",
 			"appName": "ZBoxTest"
 		}
-	]
+	],
+	"users": [
+    {
+      "user":"zbox",
+      "pass":"zbox"
+    }]
 }, true);
 
 var api = new ParseServer({
