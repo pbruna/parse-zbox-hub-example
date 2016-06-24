@@ -16,7 +16,7 @@ var dashboard = new ParseDashboard({
     "allowInsecureHTTP": true,
 	"apps": [
 		{
-			"serverURL": "http://localhost:4040/parse",
+			"serverURL": "http://localhost:8080/parse",
 			"appId": "myAppId",
 			"masterKey": "myMasterKey",
 			"appName": "ZBoxTest"
@@ -35,7 +35,7 @@ var api = new ParseServer({
   appId: 'myAppId',
   masterKey: 'myMasterKey', // Keep this key secret!
   fileKey: 'optionalFileKey',
-  serverURL: 'http://localhost:4040/parse' // Don't forget to change to https if needed
+  serverURL: 'http://localhost:8080/parse' // Don't forget to change to https if needed
 });
 
 // make the Parse Server available at /parse
