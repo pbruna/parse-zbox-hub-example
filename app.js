@@ -5,8 +5,8 @@ var ParseDashboard = require('parse-dashboard');
 var app = express();
 var fs = require('fs');
 
-var mongoHost = process.env.MONGO_HOST;
-var mongoPort = process.env.MONGO_PORT || '27017';
+var mongoHost = process.env.MONGO_SERVICE_HOST;
+var mongoPort = process.env.MONGO_SERVICE_PORT || '27017';
 var mongoUser = process.env.MONGO_USER;
 var mongoPass = process.env.MONGO_PASS;
 var mongoDB = process.env.MONGO_DB;
