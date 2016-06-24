@@ -2,9 +2,6 @@
   "name": "parse",
   "version": "1.0.0",
   "description": "parse server",
-  "engines": {
-    "node": "5.9.0"
-  }
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
