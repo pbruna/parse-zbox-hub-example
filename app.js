@@ -37,7 +37,7 @@ var api = new ParseServer({
   appId: 'myAppId',
   masterKey: 'myMasterKey', // Keep this key secret!
   fileKey: 'optionalFileKey',
-  serverURL: 'http://localhost:8080/parse' // Don't forget to change to https if needed
+  serverURL: parseURL // Don't forget to change to https if needed
 });
 
 // make the Parse Server available at /parse
