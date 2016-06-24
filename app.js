@@ -6,9 +6,11 @@ var fs = require('fs');
 
 var mongoHost = process.env.MONGO_HOST;
 var mongoPort = process.env.MONGO_PORT || '27017';
+var mongoUser = process.env.MONGO_USER;
+var mongoPass = process.env.MONGO_PASS;
 var mongoDB = process.env.MONGO_DB;
 
-var mongoConnString = 'mongodb://' + mongoHost + ':' + mongoPort + '/' + mongoDB;
+var mongoConnString = 'mongodb://' + mongoUser + ':' + mongoPass + '@' + mongoHost + ':' + mongoPort + '/' + mongoDB;
 
 var dashboard = new ParseDashboard({
 	"apps": [
