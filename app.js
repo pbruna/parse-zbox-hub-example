@@ -25,7 +25,7 @@ var dashboard = new ParseDashboard({
 
 var api = new ParseServer({
   databaseURI: mongoConnString, // Connection string for your MongoDB database
-  cloud: '/opt/app-root/cloud/main.js', // Absolute path to your Cloud Code
+  cloud: '/opt/app-root/src/cloud/main.js', // Absolute path to your Cloud Code
   appId: 'myAppId',
   masterKey: 'myMasterKey', // Keep this key secret!
   fileKey: 'optionalFileKey',
