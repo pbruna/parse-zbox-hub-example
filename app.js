@@ -13,6 +13,7 @@ var mongoDB = process.env.MONGO_DB;
 var mongoConnString = 'mongodb://' + mongoUser + ':' + mongoPass + '@' + mongoHost + ':' + mongoPort + '/' + mongoDB;
 
 var dashboard = new ParseDashboard({
+    "allowInsecureHTTP": true,
 	"apps": [
 		{
 			"serverURL": "http://localhost:4040/parse",
@@ -21,7 +22,7 @@ var dashboard = new ParseDashboard({
 			"appName": "ZBoxTest"
 		}
 	]
-});
+}, true);
 
 var api = new ParseServer({
   databaseURI: mongoConnString, // Connection string for your MongoDB database
